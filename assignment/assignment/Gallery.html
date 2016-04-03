@@ -1,0 +1,248 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/PenAndPixel.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        
+          
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/jquery-1.11.1.js"></script>
+    
+        <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+        <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script>
+             $("document").ready(function(){
+                 
+                $("nav a:not(a:eq(0))").attr("id", "leftBorder");
+                
+                $("#Gallery img:not(#game):not(#drawing):not(#something):not(#blackAndWhite)").attr("id", "photography");  
+                
+
+                $(".blackAndWhiteButton").click(function(){
+                    $("#Gallery #blackAndWhite").show()
+                    $("#Gallery img:not(#blackAndWhite)").hide()
+                })
+                $(".photographyButton").click(function(){
+                    $("#Gallery #blackAndWhite, #photography").show()
+                    $("#Gallery img:not(#blackAndWhite):not(#photography)").hide()
+                })
+                $(".gamesButton").click(function(){
+                    $("#Gallery #game").show()
+                    $("#Gallery img:not(#game)").hide()
+                })
+                $(".drawingButton").click(function(){
+                    $("#Gallery #drawing").show()
+                    $("#Gallery img:not(#drawing)").hide()
+                })
+                $(".somethingButton").click(function(){
+                    $("#Gallery #something").show()
+                    $("#Gallery img:not(#something)").hide()
+                })
+
+                $(".blackAndWhiteButton").click(function(){
+                    $("#Gallery img:not(#blackAndWhite)").hide()
+                    $("#Gallery blackAndWhite").show()
+                })
+                 $("a[rel^='prettyPhoto']").prettyPhoto();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="navigation">
+                <nav><a href="PenAndPixel.html">home</a><a href="Gallery.html">gallery</a> <a href="Find_Us.html">Find us</a><a href="Contact_Us.html">Contact us</a> <a href="Sponsors.html">Sponsors</a>
+                </nav>
+            </div>
+        <div>
+            <input  type="button" value="black and white" class="blackAndWhiteButton">
+            <input  type="button" value="photography" class="photographyButton">
+            <input  type="button" value="games" class="gamesButton">
+            <input  type="button" value="drawings" class="drawingButton">
+            <input  type="button" value="something" class="somethingButton">
+        </div>
+        <div id="Gallery">
+                <a href="img/0.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/0.jpg"  alt="This is the title"/></a>
+                <a href="img/1.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/1.jpg"  alt="This is the title" id="game"/></a>
+                 <a href="img/2.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/2.jpg"   alt="This is the title" id="drawing"/></a>
+                <a href="img/3.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/3.jpg"   alt="This is the title" id="game"/></a>
+                <a href="img/4.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/4.jpg"   alt="This is the title" id="game"/></a>
+                <a href="img/5.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/5.jpg"   alt="This is the title" id="game"/></a>
+                <a href="img/6.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/6.jpg"   alt="This is the title" id="something"/></a>
+                <a href="img/7.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/7.jpg"   alt="This is the title" id="something"/></a>
+                <a href="img/8.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/8.jpg"   alt="This is the title" id="game"/></a>
+                <a href="img/9.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/9.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                
+                <a href="img/10.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/10.jpg"  alt="This is the title"  id=""/></a>
+                <a href="img/11.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/11.jpg"  alt="This is the title"  id="blackAndWhite"/></a>
+                <a href="img/12.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/12.jpg"  alt="This is the title"  id="blackAndWhite"/></a>
+                <a href="img/13.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/13.jpg"  alt="This is the title"  id=""/></a>
+                <a href="img/14.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/14.jpg"  alt="This is the title"  id="drawing"/></a>
+                <a href="img/15.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/15.jpg"  alt="This is the title"  id=""/></a>
+                <a href="img/16.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/16.jpg"  alt="This is the title"  id="game"/></a>
+                <a href="img/17.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/17.jpg"  alt="This is the title"  id="game"/></a>
+                <a href="img/18.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/18.jpg"  alt="This is the title"  id="blackAndWhite"/></a>
+                <!--<a href="img/19.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/19.jpg"  alt="This is the title"  id=""/></a>
+                
+                <a href="img/20.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/20.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/21.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/21.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/22.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/22.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/23.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/23.jpg"   alt="This is the title" id=""/></a>
+                 <a href="img/24.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/24.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/25.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/25.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/26.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/26.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/27.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/27.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/28.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/28.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/29.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/29.jpg"   alt="This is the title" id=""/></a>
+                
+                <a href="img/30.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/30.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/31.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/31.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/32.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/32.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/33.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/33.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/34.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/34.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/35.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/35.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/36.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/36.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/37.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/37.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/38.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/38.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/39.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/39.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                
+                <a href="img/40.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/40.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/41.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/41.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/42.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/42.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/43.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/43.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/44.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/44.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/45.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/45.jpg"   alt="This is the title" id=""/></a>
+                <a href="img/46.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/46.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/47.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/47.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/48.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/48.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/49.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/49.jpg"   alt="This is the title" id="blackAndWhite"/></a>
+                
+                <a href="img/50.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/50.jpg"  alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/51.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/51.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/52.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/52.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/53.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/53.jpg"  alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/54.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/54.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/55.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/55.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/56.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/56.jpg"  alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/57.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/57.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/58.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/58.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/59.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/59.jpg"  alt="This is the title" id="blackAndWhite"/></a>
+                
+                <a href="img/60.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/60.jpg"  alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/61.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/61.jpg"  alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/62.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/62.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/63.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/63.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/64.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/64.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/65.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/65.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/66.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/66.jpg"  alt="This is the title" id="blackAndWhite"/></a>
+                <a href="img/67.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/67.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/68.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/68.jpg"  alt="This is the title" id=""/></a>
+                <a href="img/69.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/69.jpg"  alt="This is the title" id=""/></a>
+                
+                <!--<a href="img/70.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/70.jpg" id="blackAndWhite"/></a>
+                <a href="img/71.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/71.jpg" id=""/></a>
+                <a href="img/72.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/72.jpg" id=""/></a>
+                <a href="img/73.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/73.jpg" id=""/></a>
+                <a href="img/74.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/74.jpg" id=""/></a>
+                <a href="img/75.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/75.jpg" id=""/></a>
+                <a href="img/76.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/76.jpg" id=""/></a>
+                <a href="img/77.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/77.jpg" id=""/></a>
+                <a href="img/78.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/78.jpg" id=""/></a>
+                <a href="img/79.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/79.jpg" id=""/></a>
+                
+                <a href="img/80.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/80.jpg" id=""/></a>
+                <a href="img/81.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/81.jpg" id=""/></a>
+                <a href="img/82.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/82.jpg" id=""/></a>
+                <a href="img/83.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/83.jpg" id=""/></a>
+                <a href="img/84.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/84.jpg" id="blackAndWhite"/></a>
+                <a href="img/85.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/85.jpg" id="blackAndWhite"/></a>
+                <a href="img/86.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/86.jpg" id="blackAndWhite"/></a>
+                <a href="img/87.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/87.jpg" id="blackAndWhite"/></a>
+                <a href="img/88.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/88.jpg" id=""/></a>
+                <a href="img/89.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/89.jpg" id="blackAndWhite"/></a>
+                
+                <a href="img/90.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/90.jpg" id=""/></a>
+                <a href="img/91.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/91.jpg" id="blackAndWhite"/></a>
+                <a href="img/92.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/92.jpg" id="blackAndWhite"/></a>
+                <a href="img/93.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/93.jpg" id="blackAndWhite"/></a>
+                <a href="img/94.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/94.jpg" id=""/></a>
+                <a href="img/95.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/95.jpg" id=""/></a>
+                <a href="img/96.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/96.jpg" id=""/></a>
+                <a href="img/97.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/97.jpg" id=""/></a>
+                <a href="img/98.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/98.jpg" id=""/></a>
+                <a href="img/99.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/99.jpg" id=""/></a>
+                
+                <a href="img/100.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/100.jpg" id=""/></a>
+                <a href="img/101.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/101.jpg" id="blackAndWhite"/></a>
+                <a href="img/102.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/102.jpg" id="blackAndWhite"/></a>
+                <a href="img/103.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/103.jpg" id=""/></a>
+                <a href="img/104.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/104.jpg" id=""/></a>
+                <a href="img/105.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/105.jpg" id=""/></a>
+                <a href="img/106.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/106.jpg" id="blackAndWhite"/></a>
+                <a href="img/107.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/107.jpg" id=""/></a>
+                <a href="img/108.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/108.jpg" id=""/></a>
+                <a href="img/109.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/109.jpg" id="blackAndWhite"/></a>
+                
+                <a href="img/110.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/110.jpg" id=""/></a>
+                <a href="img/111.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/111.jpg" id=""/></a>
+                <a href="img/112.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/112.jpg" id="blackAndWhite"/></a>
+                <a href="img/113.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/113.jpg" id=""/></a>
+                <a href="img/114.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/114.jpg" id=""/></a>
+                <a href="img/115.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/115.jpg" id=""/></a>
+                <a href="img/116.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/116.jpg" id=""/></a>
+                <a href="img/117.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/117.jpg" id="blackAndWhite"/></a>
+                <a href="img/118.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/118.jpg" id=""/></a>
+                <a href="img/119.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/119.jpg" id="blackAndWhite"/></a>
+                
+                <a href="img/120.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/120.jpg" id="something"/></a>
+                <a href="img/121.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/121.jpg" id="something"/></a>
+                <a href="img/122.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/122.jpg" id="something"/></a>
+                <a href="img/123.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/123.jpg" id="something"/></a>
+                <a href="img/124.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/124.jpg" id="something"/></a>
+                <a href="img/125.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/125.jpg" id="something"/></a>
+                <a href="img/126.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/126.jpg" id="something"/></a>
+                <a href="img/127.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/127.jpg" id="something"/></a>
+                <a href="img/128.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/128.jpg" id="something"/></a>
+                <a href="img/129.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/129.jpg" id="something"/></a>
+                
+                <a href="img/130.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/130.png" id="game"/></a>
+                <a href="img/131.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/131.png" id="game"/></a>
+                <a href="img/132.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/132.png" id="game"/></a>
+                <a href="img/133.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/133.png" id="game"/></a>
+                <a href="img/134.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/134.png" id="game"/></a>
+                <a href="img/135.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/135.png" id="game"/></a>
+                <a href="img/136.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/136.png" id="game"/></a>
+                <a href="img/137.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/137.jpg" id="drawing"/></a>
+                <a href="img/138.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/138.jpg" id="drawing"/></a>
+                <a href="img/139.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/139.jpg" id="drawing"/></a>
+                
+                <a href="img/140.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/140.jpg" id="drawing"/></a>
+                <a href="img/141.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/141.jpg" id="drawing"/></a>
+                <a href="img/142.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/142.jpg" id="drawing"/></a>
+                <a href="img/143.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/143.jpg" id="drawing"/></a>
+                <a href="img/144.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/144.jpg" id="drawing"/></a>
+                <a href="img/145.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/145.jpg" id="drawing"/></a>
+                <a href="img/146.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/146.jpg" id="drawing"/></a>
+                <a href="img/147.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/147.jpg" id="drawing"/></a>
+                <a href="img/148.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/148.jpg" id="drawing"/></a>
+                <a href="img/149.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/149.jpg" id="drawing"/></a>
+                
+                <a href="img/150.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/150.jpg" id="drawing"/></a>
+                <a href="img/151.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/151.jpg" id="drawing"/></a>
+                <a href="img/152.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/152.jpg" id="drawing"/></a>
+                <a href="img/153.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/153.jpg" id="drawing"/></a>
+                <a href="img/154.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/154.jpg" id="drawing"/></a>
+                <a href="img/155.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/155.jpg" id="drawing"/></a>
+                <a href="img/156.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/156.jpg" id="drawing"/></a>
+                <a href="img/157.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/157.jpg" id="drawing"/></a>
+                <a href="img/158.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/158.jpg" id="game"/></a>
+                <a href="img/159.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/159.jpg" id="drawing"/></a>
+                
+                <a href="img/160.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/160.jpg" id="something"/></a>
+                <a href="img/161.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/161.jpg" id="game"/></a>
+                <a href="img/162.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/162.jpg" id="something"/></a>
+                <a href="img/163.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/163.jpg" id="something"/></a>--->
+            </div>
+        </div>
+    </body>
+</html>

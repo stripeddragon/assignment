@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/PenAndPixel.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="js/jquery-1.11.1.js"></script>
+        <script>
+            $("document").ready(function(){
+                $("#animateBlock").animate({width: '900px','margin-top': '160px' }, "slow");
+                $("#animateBlock").animate({width: '530px', left: '410px'},"slow");
+                
+                $("#animatedCircle").delay(1000).animate({'border-width': '100px', 'border-radius': '100px', 'margin-top':'110px', 'margin-left': '460px' },"slow");
+                $("#animatedCircleTwo").delay(1200).animate({'border-width': '90px', 'border-radius': '90px', 'margin-top':'120px', 'margin-left': '470px' },"slow");
+                
+                $("#navigationAnimated").animate({'height': '40px'}, "slow");
+                
+                $("#pen").delay(900).animate({opacity: 1},"slow");
+                $("#and").delay(1400).animate({opacity: 1},"slow");
+                $("#pixel").delay(1000).animate({opacity: 1},"slow");
+                $("#date").delay(2200).animate({opacity: 1, 'margin-top': "20px"},"slow");
+                $(".overview").delay(2400).animate({height: "160px"},"slow");
+                $(".overview p").delay(2800).slideDown(1000);
+                
+                $("nav a:not(a:eq(0))").attr("id", "leftBorder");
+            });
+           
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="navigationAnimated">
+                <nav>
+                    <a href="PenAndPixel.html">home</a> <a href="Gallery.html">gallery</a> <a href="Find_Us.html">Find us</a>  <a href="Contact_Us.html">Contact us</a> <a href="Sponsors.html">Sponsors</a> 
+                </nav>
+            </div>
+            <div>
+                <div id="animateBlock"></div>
+                <div id="animatedCircle"></div>
+                <div id="animatedCircleTwo"></div>
+                <div id="textBox"><p id="pen">Pen</p><p id="and">&</p><p id="pixel">Pixel</p></div>
+                <div id="dateDiv"><p id="date">2015/2016</p></div>
+                <div class="overview">
+                    <p id="hidden">Pen & Pixel is an annual multimedia exhibition held by the students of Limerick School of Art and Design (LSAD) located at the Clonmel campus of Limerick Institute of Technology (LIT).</p>
+
+                    <p id="hidden">This year, the event will be held on Thursday the 22nd of May at 6.00pm in LIT Clonmel (see LIT Clonmel on map). The annual event has slowly transformed into a spectacular end of year exhibition. As part of the exhibition, we are showcasing the work of Creative Multimedia and Digital Animation Production students from the past year. This exhibition will feature both digital and analogue pieces from the students of LSAD Clonmel.</p>
+                </div>
+            </div>
+        </div>
+    </body>     
+</html>
