@@ -11,7 +11,42 @@
         <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
         <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
         
-        
+        <script>
+             $("document").ready(function(){
+                 
+                $("nav a:not(a:eq(0))").attr("id", "leftBorder");
+                
+                $("#Gallery img:not(#game):not(#drawing):not(#something):not(#blackAndWhite)").attr("id", "photography");  
+                
+
+                $(".blackAndWhiteButton").click(function(){
+                    $("#Gallery #blackAndWhite").show()
+                    $("#Gallery img:not(#blackAndWhite)").hide()
+                })
+                $(".photographyButton").click(function(){
+                    $("#Gallery #blackAndWhite, #photography").show()
+                    $("#Gallery img:not(#blackAndWhite):not(#photography)").hide()
+                })
+                $(".gamesButton").click(function(){
+                    $("#Gallery #game").show()
+                    $("#Gallery img:not(#game)").hide()
+                })
+                $(".drawingButton").click(function(){
+                    $("#Gallery #drawing").show()
+                    $("#Gallery img:not(#drawing)").hide()
+                })
+                $(".somethingButton").click(function(){
+                    $("#Gallery #something").show()
+                    $("#Gallery img:not(#something)").hide()
+                })
+
+                $(".blackAndWhiteButton").click(function(){
+                    $("#Gallery img:not(#blackAndWhite)").hide()
+                    $("#Gallery blackAndWhite").show()
+                })
+                 $("a[rel^='prettyPhoto']").prettyPhoto();
+            });
+        </script>
     </head>
     <body>
         <div class="container">
@@ -209,41 +244,5 @@
                 <a href="img/163.jpg" rel="prettyPhoto[img]" title="This is the description"><img src="img/163.jpg" id="something"/></a>--->
             </div>
         </div>
-        <script>
-             $("document").ready(function(){
-                 
-                $("nav a:not(a:eq(0))").attr("id", "leftBorder");
-                
-                $("#Gallery img:not(#game):not(#drawing):not(#something):not(#blackAndWhite)").attr("id", "photography");  
-                
-
-                $(".blackAndWhiteButton").click(function(){
-                    $("#Gallery #blackAndWhite").show()
-                    $("#Gallery img:not(#blackAndWhite)").hide()
-                })
-                $(".photographyButton").click(function(){
-                    $("#Gallery #blackAndWhite, #photography").show()
-                    $("#Gallery img:not(#blackAndWhite):not(#photography)").hide()
-                })
-                $(".gamesButton").click(function(){
-                    $("#Gallery #game").show()
-                    $("#Gallery img:not(#game)").hide()
-                })
-                $(".drawingButton").click(function(){
-                    $("#Gallery #drawing").show()
-                    $("#Gallery img:not(#drawing)").hide()
-                })
-                $(".somethingButton").click(function(){
-                    $("#Gallery #something").show()
-                    $("#Gallery img:not(#something)").hide()
-                })
-
-                $(".blackAndWhiteButton").click(function(){
-                    $("#Gallery img:not(#blackAndWhite)").hide()
-                    $("#Gallery blackAndWhite").show()
-                })
-                 $("a[rel^='prettyPhoto']").prettyPhoto();
-            });
-        </script>
     </body>
 </html>
