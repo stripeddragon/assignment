@@ -8,27 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
-            $("document").ready(function(){
-                $("#animateBlock").animate({width: '900px','margin-top': '160px' }, "slow");
-                $("#animateBlock").animate({width: '530px', left: '410px'},"slow");
-                
-                $("#animatedCircle").delay(1000).animate({'border-width': '100px', 'border-radius': '100px', 'margin-top':'110px', 'margin-left': '460px' },"slow");
-                $("#animatedCircleTwo").delay(1200).animate({'border-width': '90px', 'border-radius': '90px', 'margin-top':'120px', 'margin-left': '470px' },"slow");
-                
-                $("#navigationAnimated").animate({'height': '40px'}, "slow");
-                
-                $("#pen").delay(900).animate({opacity: 1},"slow");
-                $("#and").delay(1400).animate({opacity: 1},"slow");
-                $("#pixel").delay(1000).animate({opacity: 1},"slow");
-                $("#date").delay(2200).animate({opacity: 1, 'margin-top': "20px"},"slow");
-                $(".overview").delay(2400).animate({height: "160px"},"slow");
-                $(".overview p").delay(2800).slideDown(1000);
-                
-                $("nav a:not(a:eq(0))").attr("id", "leftBorder");
-            });
-           
-        </script>
+        
     </head>
     <body>
         <div class="container">
@@ -50,5 +30,27 @@
                 </div>
             </div>
         </div>
+       
+        <script>
+            $("document").ready(function(){
+                $("#animateBlock").animate({width: '900px','margin-top': '160px' }, "slow");
+                $("#animateBlock").animate({width: '530px', left: '410px'},"slow");
+                
+                $("#animatedCircle").delay(1000).animate({'border-width': '100px', 'border-radius': '100px', 'margin-top':'110px', 'margin-left': '460px' },"slow");
+                $("#animatedCircleTwo").delay(1200).animate({'border-width': '90px', 'border-radius': '90px', 'margin-top':'120px', 'margin-left': '470px' },"slow");
+                
+                $("#navigationAnimated").animate({'height': '40px'}, "slow");
+                
+                $("#pen").delay(900).animate({opacity: 1},"slow");
+                $("#and").delay(1400).animate({opacity: 1},"slow");
+                $("#pixel").delay(1000).animate({opacity: 1},"slow");
+                $("#date").delay(2200).animate({opacity: 1, 'margin-top': "20px"},"slow");
+                $(".overview").delay(2400).animate({height: "160px"},"slow");
+                $(".overview p").delay(2800).slideDown(1000);
+                
+                $("nav a:not(a:eq(0))").attr("id", "leftBorder");
+            });
+           
+        </script>
     </body>     
 </html>
